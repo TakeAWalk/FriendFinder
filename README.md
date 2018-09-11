@@ -18,7 +18,7 @@ Also contains a method that takes a friend and compares their scores against its
 
 #### html - home.html & survey.html
 
-The home and survey html pages provide links to /api/friends endpoint that returns a JSON representation of the friends that have completed the survey. Additionally, the survey provides users with a 10 page survey to contrast personalities. On submit, the profile is compared to all other friends in the database and a "best friend" based on compatibility is returned.
+The home and survey html pages provide links to /api/friends endpoint that returns a JSON representation of the friends that have completed the survey. Additionally, the survey provides users with a 10 question survey to contrast personalities. On submit, the profile is compared to all other friends in the database and a "best friend" based on compatibility is returned.
 
 #### routing - apiRoutes.js & htmlRoutes.js
 
@@ -32,7 +32,7 @@ The htmlRoutes direct the user to the survey page when /survey is requested, oth
 
 #### server.js
 
-server.js setsup the express server, defines the routes and starts the server.
+server.js sets up the express server, gathers routes and starts the server.
 
 ### How to use the app?
 
