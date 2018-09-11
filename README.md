@@ -38,47 +38,32 @@ server.js setsup the express server, defines the routes and starts the server.
 
 #### home.html
 
-![Homepage](https://takeawalk.github.io/FriendFinder/screenshots/home.PNG)
+![Homepage](https://takeawalk.github.io/FriendFinder/screenshots/homepage.PNG)
 
-1. Using the printed table of available products, specify an item_id to purchase.
-2. Specify the quantity you wish to purchase.
-   - If the item is available in the quantity you requested,
-     - the purchase is made,
-     - the order total displayed and
-     - the database is updated.
-   - Otherwise you will recieve an error message of "Insufficient quantity!"
+- The primary option here is to 'Go to Survey'. Alternatively you can use the links below to hit the endpoint and get a JSON representation of the friends currently in the database ![JSON of Friends](https://takeawalk.github.io/FriendFinder/screenshots/get-endpoint.PNG)
+- or navigate to the GitHub repo.
 
-#### bamazonManager.js
+#### survey.html
 
-The following options are available when the app is launched:
+![Survey](https://takeawalk.github.io/FriendFinder/screenshots/survey.PNG)
 
-- View Products for Sale
-  - Display all inventory items
-    ![Image of bamazonManager inventory](https://takeawalk.github.io/UTM/12-mysql/media/manager-inventory.png)
-- View Low Inventory
-  - View items with stock less than 5
-    ![Image of report showing items with less than 5 in stock](https://takeawalk.github.io/UTM/12-mysql/media/manager-lowinventory.png)
-- Add to Inventory
-  - Replenish inventory for a specific item
-    ![Image of restock functionality](https://takeawalk.github.io/UTM/12-mysql/media/manager-addinventory.png)
-- Add New Product
-  ![Image of add a new product functionality](https://takeawalk.github.io/UTM/12-mysql/media/manager-addnewproduct.png)
+Complete the survey by filling out your name, providing a url to a photo of yourself and by answering all 10 questions. Once complete, submit the information.
+
+![Submitted Survey](https://takeawalk.github.io/FriendFinder/screenshots/onsubmit.PNG)
+
+You now know who your "best friend" is.
 
 ## How do I use this?
 
-- Use Node to run this app.
-  - To execute the customer purchasing app, in terminal run `node bamazonCustomer.js`
-  - To execute the manager app, in terminal run `node bamazonManager.js`
+- Navigate to: https://gentle-tundra-89747.herokuapp.com/
 
 ## Built Using
 
 - [NodeJS](https://nodejs.org/en/)
 - Node Packages
-  - [inquirer](https://www.npmjs.com/package/inquirer)
-  - [mysql](https://www.npmjs.com/package/mysql)
-- [MySQL](https://www.mysql.com/)
-  - Database: bamazon
-  - Table: products
+  - [express](https://www.npmjs.com/package/express)
+  - [path](https://www.npmjs.com/package/path)
+  - [body-parser](https://www.npmjs.com/package/body-parser)
 
 ## Author
 
